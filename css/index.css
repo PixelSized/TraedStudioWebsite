@@ -18,8 +18,7 @@ body {
   width: 200px;
   background-color: #17141d;
   border-radius: 10px;
-  box-shadow: -1rem 0 3rem #000;
-/*   margin-left: -50px; */
+  box-shadow: 0px 0 20px 5px #000;
   transition: 0.4s ease-out;
   position: relative;
   left: 0px;
@@ -68,35 +67,17 @@ body {
   z-index: 3;
   width: 0px;
   height: 100%;
-  background: rgb(0,154,217);
-  background: linear-gradient(90deg, rgba(0,154,217,1) 0%, rgba(217,147,0,1) 65%, rgba(255,186,0,1) 100%);
+  background: #1AD4A8;
+  background: #1AD4A8;
   transition: 0.6s ease-out;
 }
 
 .card:hover .filledbar {
-  width: 120px;
+  width: 100%;
   transition: 0.4s ease-out;
-}
-
-.circle {
-  position: absolute;
-  top: 150px;
-  left: calc(50% - 60px);
-}
-
-.stroke {
-  stroke: white;
-  stroke-dasharray: 360;
-  stroke-dashoffset: 360;
-  transition: 0.6s ease-out;
 }
 
 svg {
   fill: #17141d;
   stroke-width: 2px;
-}
-
-.card:hover .stroke {
-  stroke-dashoffset: 100;
-  transition: 0.6s ease-out;
 }
