@@ -1,0 +1,26 @@
+* {
+	margin: 0; padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+
+	background: #1C1C1C;
+	overflow: hidden;
+	font-family: 'Verdana';
+}
+
+canvas {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.dummy-interface {
+  background: url("http://conference.awwwards.com/bundles/tvconference/images/bg-points.png");
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
