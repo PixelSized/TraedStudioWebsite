@@ -11,7 +11,7 @@ body {
 
 .container {
     position: absolute;
-    height: 800px;
+    height: 600px;
     width: 75%;
     left: 12%;
     display: flex;
