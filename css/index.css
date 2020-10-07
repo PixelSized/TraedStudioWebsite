@@ -4,9 +4,9 @@ body {
 }
 
 .centered {
-  margin: auto;
-  max-width: 50%;
-  padding: 80px;
+    margin: auto;
+    max-width: 50%;
+    padding: 100px;
 }
 
 .container {
@@ -337,7 +337,9 @@ textarea, label {
 -------------------------------------------------*/
 .mt20{margin-top:20px;}
 .site-wrapper {
-  border-top: 4px solid #1AD4A8; }
+    border-top: 4px solid #1AD4A8;
+    border-radius: 50px;
+}
 
 .page-close {
   font-size: 30px;
