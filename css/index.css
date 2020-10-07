@@ -3,11 +3,16 @@ body {
   font-family: 'Open Sans', sans-serif;
 }
 
+.centered {
+  margin: auto;
+  max-width: 50%;
+  padding: 80px;
+}
+
 .container {
     position: absolute;
     height: 800px;
     width: 75%;
-    top: 60px;
     left: 12%;
     display: flex;
 }
