@@ -1,2 +1,2 @@
-# TraedStudioWebsite
+# Traed Studio Website
 Website for traedstudios
