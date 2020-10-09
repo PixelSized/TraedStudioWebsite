@@ -1,0 +1,193 @@
+@import url(https://fonts.googleapis.com/css2?family=Rubik:ital,wght@1,600&display=swap);
+
+html {
+	box-sizing: border-box;
+	/*font-family: Arial, sans-serif, Cocogoose;*/
+	font-size: 16px;
+	font-weight: normal;
+    line-height: 1.4;
+    scroll-behavior: smooth;
+    background-color: #1d1d1d;
+    cursor: grab;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    background-color: #1d1d1d;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #1AD4A8;
+    border-radius: 50px;
+    background-image: -webkit-linear-gradient(45deg,rgba(255, 255, 255, .2) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .2) 50%, rgba(255, 255, 255, .2) 75%, transparent 75%, transparent);
+}
+
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    background-color: #1d1d1d;
+}
+
+::-moz-selection {
+  background-color: #1AD4A8;
+  color: #fff; }
+
+::selection {
+  background-color: #1AD4A8;
+  color: #fff; }
+
+*,
+*:before,
+*:after {
+	box-sizing: inherit;
+}
+
+h1 {
+	color: #fff;
+	font-family: 'COCOGOOSE';
+	line-height: 1.2;
+	margin: 0.5em 0 3em;
+	text-shadow: 1px 1px 1px #333;
+}
+
+@media (min-width: 67.1875em) {
+	h1 {
+		font-size: 4em;
+	}
+}
+
+@font-face {
+    font-family: 'COCOGOOSE';
+    src:url(../assets/fonts/COCOGOOSE.ttf.woff) format('woff'),
+        url(../assets/fonts/COCOGOOSE.ttf.svg) format('svg'),
+        url(../assets/fonts/COCOGOOSE.ttf.eot); 
+    font-weight: normal;
+    font-style: normal;
+}
+
+html,
+body {
+	height: 100%;
+    width: 100%;
+    margin: 0px;
+	padding: 0;
+}
+
+.wrap {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+	background: #1d1d1d;
+	color: #1AD4A8;
+	text-align: center;
+}
+
+header {
+	background: #1d1d1d;
+	box-shadow: 0 .5em 1em #1AD4A8;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: 900;
+    width: 100%;
+    font-family: 'COCOGOOSE';
+}
+
+hr {
+    display: flex;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 50px;
+}
+
+@media (max-width:383px){
+  h1{
+    padding-top: 100px;
+  }
+}
+@media (max-width:298px){
+  h1{
+    padding-top: 160px;
+  }
+}
+
+h1 {
+    color: #1AD4A8;
+    display: block;
+    margin-block-start: 0.67em;
+    margin-block-end: 0.67em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: normal;
+}
+
+header label {
+	color: #1AD4A8;
+	cursor: pointer;
+	display: inline-block;
+	line-height: 4.25em;
+    padding: 0 1em;
+    cursor: hidden;
+}
+
+header label:hover {
+    background: #084436;
+    cursor: hidden;
+}
+
+.slide {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    padding: 8em 1em 0;
+    background-color: #1d1d1d;
+    background-position: 50% 50%;
+    background-size: cover;
+    transition: left 0s .75s;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.slide-one {
+	background-image: url("");
+}
+
+.slide-two {
+	background-image: url("");
+}
+
+.slide-three {
+	background-image: url("");
+}
+
+.slide-four {
+	background-image: url("");
+}
+
+.slide h1 {
+	opacity: 0;
+	transform: translateY(100%);
+	transition: transform .5s .5s, opacity .5s;
+}
+
+[id^="slide"]:checked + .slide {
+	left: 0;
+	z-index: 100;
+	transition: left .65s ease-out;
+}
+
+[id^="slide"]:checked + .slide h1 {
+	opacity: 1;
+	transform: translateY(0);
+	transition: all .5s .5s;
+}

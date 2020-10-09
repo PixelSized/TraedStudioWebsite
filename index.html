@@ -1,50 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!--Jquery-->
-    <script src="https://code.jquery.com/jquery-3.5.1.js"
-        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
-
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+        crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traed Studios</title>
-    <link rel="stylesheet" href="./css/index.css">
-    <script src="./js/index.js"></script>
+    <title>Traded</title>
+    <link rel='stylesheet' href='./css/index2.css'>
+    <script src='./js/index.js'></script>
+
+    <script>
+        if (localStorage.getItem('isAdmin') !== 'true')
+        {
+            document.getElementById("bod").oncontextmenu = 'return false;';
+            document.onkeydown = function (e) {
+                if (event.keyCode == 123) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 'Q'.charCodeAt(0)) {
+                    localStorage.setItem('isAdmin', 'true');
+                }
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) {
+                    return false;
+                }
+                if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) {
+                    return false;
+                }
+                if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) {
+                    return false;
+                }
+                if (e.ctrlKey && e.keyCode == 'S'.charCodeAt(0)) {
+                    return false;
+                }
+            }
+        } else {}
+    </script>
 </head>
+<body onmousedown="document.body.style.cursor = 'grabbing';" onmouseup="document.body.style.cursor = 'grab';" id="bod">
+    <div class="wrap">
+        <header>
+            <div style="cursor: pointer; height: 100%;" onclick="window.location.href='index.html'">
+                <img src="https://cdn.discordapp.com/attachments/729949559102505041/763325014144581642/Traed_word.png" style="
+                height: 10px;
+                float: left;
+                margin: 28px;
+            ">
+            </div>
 
-<body>
-    <main class="site-wrapper">
-        <div class="centered"><img style="width: 70%;margin-left: 13%;margin-right: 13%;" src="https://cdn.discordapp.com/attachments/729949559102505041/763325014144581642/Traed_word.png"></div>
-    </main>
+            <label for="slide-1-trigger">BOTRIX</label>
+            <label for="slide-2-trigger">SYNAPSE CLOUD</label>
+            <label for="slide-3-trigger">SOLITARY</label>
+            <label for="slide-4-trigger">COMRADE-IN-ARMS</label>
+        </header>
 
-    <div class="container">
-        <div class="card" onclick="location.href='https://www.synapsecloud.cc/'" style="cursor: pointer;">
-            <h3 class="title">Synapse Cloud</h3>
-            <div class="bar">
-                <div class="emptybar"></div>
-                <div class="filledbar"></div>
-            </div>
-            <p style="margin: auto;">lorem iptun blah blah bullshit</p>
-        </div>
-        <div class="card" onclick="location.href='https://botrix.cc/'" style="cursor: pointer;">
-            <h3 class="title">Botrix</h3>
-            <div class="bar">
-                <div class="emptybar"></div>
-                <div class="filledbar"></div>
-            </div>
-            <p style="margin: auto;">lorem iptun blah blah bullshit</p>
-        </div>
-        <div class="card">
-            <h3 class="title">Solitary</h3>
-            <div class="bar">
-                <div class="emptybar"></div>
-                <div class="filledbar"></div>
-            </div>
-            <p style="margin: auto;">lorem iptun blah blah bullshit</p>
-        </div>
+        <!--Page 1-->
+        <input id="slide-1-trigger" type="radio" name="slides" checked>
+        <section class="slide slide-one">
+            <h1>BOTRIX</h1>
+            <hr>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui?
+            Quam nemo umquam voluptatem appellavit, appellat; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
+            Contineo me ab exemplis. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque
+            opiniones assequi possit. Quasi ego id curem, quid ille aiat aut neget. Eaedem enim utilitates poterunt eas labefactare
+            atque pervertere.
+            
+            Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Idemne potest esse dies saepius, qui semel fuit? Venit ad
+            extremum; Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Ita
+            enim vivunt quidam, ut eorum vita refellatur oratio. Aliter enim nosmet ipsos nosse non possumus. Sit, inquam, tam
+            facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Illum mallem levares, quo optimum atque
+            humanissimum virum, Cn.
+            
+            Duo Reges: constructio interrete. Quodsi ipsam honestatem undique pertectam atque absolutam. Quo igitur, inquit, modo?
+            Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Fatebuntur Stoici
+            haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Ille vero, si insipiens-quo certe, quoniam
+            tyrannus -, numquam beatus; Sed quot homines, tot sententiae; Tubulo putas dicere? Videamus igitur sententias eorum, tum
+            ad verba redeamus. Quo tandem modo?
+        </section>
+
+        <!--Page 2-->
+        <input id="slide-2-trigger" type="radio" name="slides">
+        <section class="slide slide-two">
+            <h1>SYNAPSE CLOUD</h1>
+            <hr>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui?
+            Quam nemo umquam voluptatem appellavit, appellat; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
+            Contineo me ab exemplis. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque
+            opiniones assequi possit. Quasi ego id curem, quid ille aiat aut neget. Eaedem enim utilitates poterunt eas labefactare
+            atque pervertere.
+            
+            Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Idemne potest esse dies saepius, qui semel fuit? Venit ad
+            extremum; Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Ita
+            enim vivunt quidam, ut eorum vita refellatur oratio. Aliter enim nosmet ipsos nosse non possumus. Sit, inquam, tam
+            facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Illum mallem levares, quo optimum atque
+            humanissimum virum, Cn.
+            
+            Duo Reges: constructio interrete. Quodsi ipsam honestatem undique pertectam atque absolutam. Quo igitur, inquit, modo?
+            Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Fatebuntur Stoici
+            haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Ille vero, si insipiens-quo certe, quoniam
+            tyrannus -, numquam beatus; Sed quot homines, tot sententiae; Tubulo putas dicere? Videamus igitur sententias eorum, tum
+            ad verba redeamus. Quo tandem modo?
+        </section>
+
+        <!--Page 3-->
+        <input id="slide-3-trigger" type="radio" name="slides">
+        <section class="slide slide-three">
+            <h1>SOLITARY</h1>
+            <hr>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui?
+            Quam nemo umquam voluptatem appellavit, appellat; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
+            Contineo me ab exemplis. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque
+            opiniones assequi possit. Quasi ego id curem, quid ille aiat aut neget. Eaedem enim utilitates poterunt eas labefactare
+            atque pervertere.
+            
+            Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Idemne potest esse dies saepius, qui semel fuit? Venit ad
+            extremum; Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Ita
+            enim vivunt quidam, ut eorum vita refellatur oratio. Aliter enim nosmet ipsos nosse non possumus. Sit, inquam, tam
+            facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Illum mallem levares, quo optimum atque
+            humanissimum virum, Cn.
+            
+            Duo Reges: constructio interrete. Quodsi ipsam honestatem undique pertectam atque absolutam. Quo igitur, inquit, modo?
+            Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Fatebuntur Stoici
+            haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Ille vero, si insipiens-quo certe, quoniam
+            tyrannus -, numquam beatus; Sed quot homines, tot sententiae; Tubulo putas dicere? Videamus igitur sententias eorum, tum
+            ad verba redeamus. Quo tandem modo?
+        </section>
+
+        <!--Page 4-->
+        <input id="slide-4-trigger" type="radio" name="slides">
+        <section class="slide slide-four">
+            <h1>COMRADE-IN-ARMS</h1>
+            <hr>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui?
+            Quam nemo umquam voluptatem appellavit, appellat; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
+            Contineo me ab exemplis. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque
+            opiniones assequi possit. Quasi ego id curem, quid ille aiat aut neget. Eaedem enim utilitates poterunt eas labefactare
+            atque pervertere.
+            
+            Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Idemne potest esse dies saepius, qui semel fuit? Venit ad
+            extremum; Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Ita
+            enim vivunt quidam, ut eorum vita refellatur oratio. Aliter enim nosmet ipsos nosse non possumus. Sit, inquam, tam
+            facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Illum mallem levares, quo optimum atque
+            humanissimum virum, Cn.
+            
+            Duo Reges: constructio interrete. Quodsi ipsam honestatem undique pertectam atque absolutam. Quo igitur, inquit, modo?
+            Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Fatebuntur Stoici
+            haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Ille vero, si insipiens-quo certe, quoniam
+            tyrannus -, numquam beatus; Sed quot homines, tot sententiae; Tubulo putas dicere? Videamus igitur sententias eorum, tum
+            ad verba redeamus. Quo tandem modo?
+        </section>
+    
     </div>
-
 </body>
-
 </html>
