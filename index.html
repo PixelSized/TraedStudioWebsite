@@ -12,7 +12,7 @@
     <script>
         if (localStorage.getItem('isAdmin') !== 'true')
         {
-            document.getElementById("bod").oncontextmenu = false;
+            document.getElementById("bod").oncontextmenu = 'return false';
             document.onkeydown = function (e) {
                 if (event.keyCode == 123) {
                     return false;
