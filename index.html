@@ -12,6 +12,9 @@
     <script>
         if (localStorage.getItem('isAdmin') !== 'true')
         {
+            window.addEventListener('contextmenu', function (e) {
+                e.preventDefault();
+            }, false);
             document.onkeydown = function (e) {
                 if (event.keyCode == 123) {
                     return false;
@@ -38,7 +41,7 @@
         } else {}
     </script>
 </head>
-<body onmousedown="document.body.style.cursor = 'grabbing';" onmouseup="document.body.style.cursor = 'grab';" id="bod" oncontextmenu="return false;">
+<body onmousedown="document.body.style.cursor = 'grabbing';" onmouseup="document.body.style.cursor = 'grab';" id="bod">
     <div class="wrap">
         <header>
             <div style="cursor: pointer; height: 100%;" onclick="window.location.href='index.html'">
@@ -132,23 +135,39 @@
         <section class="slide slide-four">
             <h1>COMRADE-IN-ARMS</h1>
             <hr>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui?
-            Quam nemo umquam voluptatem appellavit, appellat; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
-            Contineo me ab exemplis. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque
-            opiniones assequi possit. Quasi ego id curem, quid ille aiat aut neget. Eaedem enim utilitates poterunt eas labefactare
-            atque pervertere.
-            
-            Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Idemne potest esse dies saepius, qui semel fuit? Venit ad
-            extremum; Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem. Ita
-            enim vivunt quidam, ut eorum vita refellatur oratio. Aliter enim nosmet ipsos nosse non possumus. Sit, inquam, tam
-            facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Illum mallem levares, quo optimum atque
-            humanissimum virum, Cn.
-            
-            Duo Reges: constructio interrete. Quodsi ipsam honestatem undique pertectam atque absolutam. Quo igitur, inquit, modo?
-            Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Fatebuntur Stoici
-            haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Ille vero, si insipiens-quo certe, quoniam
-            tyrannus -, numquam beatus; Sed quot homines, tot sententiae; Tubulo putas dicere? Videamus igitur sententias eorum, tum
-            ad verba redeamus. Quo tandem modo?
+            <div style="margin: 20px; margin-left: 40px; margin-right: 40px;">
+                <iframe src="https://store.steampowered.com/widget/1245900/" frameborder="0" width="646" height="190" style="margin-top: 40px; margin-bottom: 40px; background-color: #1ad4a8; margin-left: 18%; margin-right: 18%;"></iframe>
+                <img src="https://steamcdn-a.akamaihd.net/steam/apps/1245900/extras/LOGO2.png?t=1583232303">
+                <h2>LORE</h2>
+                <p>High-intensity 2D Arcade-style shooter.
+        
+                    Survive waves with different kinds of high powered enemies.
+                    <br>
+                    "Comrade in Arms" is an addicting 2D Arcade-shooter, where you can improve your skills and reflexes.</p>
+                <h2>STORY</h2>
+                <p> You are playing as a strong lone soldier with a powerful gun.
+                    There are different enemies with different weapons and the target is for them to kill you.
+                    <br>
+                    The only way to upgrade your weapon is to reach level 5 and 10!
+                    Your special ability is to heal yourself.
+                    <br>
+                    The goal is to kill the King to save the planet! </p>
+                <h2>FEATURES:</h2>
+                <p style="">
+                    -modern 2D Arcade-shooter-difficulty increases with every wave
+                    <br>
+                    -electric soundtrack will help to shoot the enemies down
+                    <br>
+                    -13 diversified levels are existing
+                </p>
+        
+                <h3>Mature content description:</h3>
+                <p>This game contains cartoonish gore and fantasy violence not suitable for every viewer.</p>
+        
+        
+        
+            </div>
+        
         </section>
     
     </div>
