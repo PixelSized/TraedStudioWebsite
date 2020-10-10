@@ -369,3 +369,9 @@ header label:hover {
 		transform: translate3d(0, -2px, 0);
 	}
 }
+
+divvy {
+    margin: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+}
