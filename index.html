@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta property="og:site_name" content="TRAED STUDIOS">
@@ -7,21 +8,22 @@
     <meta property="og:image"
         content="https://cdn.discordapp.com/attachments/729949559102505041/765852845572227082/Traed_short.png">
     <meta property="og:description" content="Software developers behind the most innovative services in the industry.
-    
-    ⬤ re-imagining the competition">
+        
+        ⬤ re-imagining the competition">
 
 
-    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
-        crossorigin="anonymous"></script>
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+        integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Traded</title>
-    <link rel='stylesheet' href='./css/index2.css'>
-    <script src='./js/index.js'></script>
+    <title>Traed Studios</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
 
     <script>
-        if (localStorage.getItem('isAdmin') !== 'true')
-        {
+        if (localStorage.getItem('isAdmin') !== 'true') {
             window.addEventListener('contextmenu', function (e) {
                 e.preventDefault();
             }, false);
@@ -48,198 +50,72 @@
                     return false;
                 }
             }
-        } else {}
+        } else { }
     </script>
 </head>
-<body onmousedown="document.body.style.cursor = 'grabbing';" onmouseup="document.body.style.cursor = 'grab';" id="bod">
 
-<!--Social Icon Template
+<body>
+    <div class="container">
+        <div class="container__item landing-page-container">
+            <div class="content__wrapper">
 
-    <ul class="social-networks bounce">
-        <li><a href="https://www.linkedin.com/" target="_blank" class="icon-linkedin">LinkedIn</a></li>
-        <li><a href="https://twitter.com/" target="_blank" class="icon-twitter">Twitter</a></li>
-        <li><a href="https://www.facebook.com/" target="_blank" class="icon-facebook">Facebook</a></li>
-        <li><a href="https://twitch.tv" target="_blank" class="icon-twitch">Twitch</a></li>
-        <li><a href="https://github.com" target="_blank" class="icon-github">GitHub</a></li>
-        <li><a href="https://pinterest.com" target="_blank" class="icon-pinterest">Pinterest</a></li>
-        <li><a href="https://instagram.com" target="_blank" class="icon-instagram">Instagram</a></li>
-        <li><a href="https://vimeo.com" target="_blank" class="icon-vimeo">Vimeo</a></li>
-    </ul>
+                <header class="header">
+                    <div class="menu-icon header__item" onclick="window.location.href=`index2.html`;">
+                        <span class="menu-icon__line"></span>
+                    </div>
 
--->
+                    <h1 class="heading header__item">TRAED</h1>
 
-    <div class="wrap">
-        <header>
-            <div style="cursor: pointer; height: 100%;" onclick="window.location.href='index.html'">
-                <img src="https://cdn.discordapp.com/attachments/729949559102505041/763325014144581642/Traed_word.png" style="
-                height: 10px;
-                float: left;
-                margin: 28px;
-            ">
+                    <ul class="social-container header__item">
+                        <!--<li class="social__icon social__icon--fb">
+                            <img style="background-color: #23d6ab;" src="https://image.flaticon.com/icons/svg/1077/1077041.svg" alt="facebook">
+                        </li>-->
+                        <li class="social__icon social__icon--in">
+                            <img style="background-color: #23d6ab;" src="https://image.flaticon.com/icons/svg/1077/1077042.svg" alt="instagram">
+                        </li>
+                    </ul>
+                </header>
+
+                <!--<p class="coords">N 49° 16' 35.173" / W 0° 42' 11.30"</p>
+
+                <div class="ellipses-container">-->
+
+                    <h2 class="greeting">Welcome.</h2>
+
+                    <p>
+                        Software developers behind the most innovative services in the industry.
+                    </p>
+                    <div style="text-align: -webkit-center;margin-top: 150px;">
+                        <button
+                            style="border-radius: 25px;    background-color: #1ad4a8;    color: #1d1d1d;    border-color: black;    box-shadow: 0 0 20px 4px #1ad4a8;"
+                            onclick="window.location.href=`index2.html`;">
+                            <h3 style="padding: 10px;"> View our most recent projects.</h3>
+                        </button></div>
+
+                    <!--<div class="ellipses ellipses__outer--thin">
+
+                        <div class="ellipses ellipses__orbit"></div>
+
+                    </div>
+
+                    <div class="ellipses ellipses__outer--thick"></div>
+                </div>
+
+                <div class="scroller">
+                    <p class="page-title">home.</p>
+
+                    <div class="timeline" style="background-color: #23d6ab;">
+                        <span class="timeline__unit"></span>
+                        <span class="timeline__unit timeline__unit--active"></span>
+                        <span class="timeline__unit"></span>
+                    </div>
+                </div>-->
             </div>
 
-            <label for="slide-1-trigger">BOTRIX</label>
-            <label for="slide-2-trigger">SYNAPSE CLOUD</label>
-            <label for="slide-3-trigger">SOLITARY</label>
-            <label for="slide-4-trigger">COMRADE-IN-ARMS</label>
-        </header>
+        </div>
 
-        <!--Page 1-->
-        <input id="slide-1-trigger" type="radio" name="slides" checked>
-        <section class="slide slide-one">
-            <h1>BOTRIX</h1>
-            <ul class="social-networks bounce">
-                <li><a href="https://twitter.com/botrix_list" target="_blank" class="icon-twitter">Twitter</a></li>
-                <li><a href="https://github.com/Botrixlist" target="_blank" class="icon-github">GitHub</a></li>
-            </ul>
-            <hr>
-            <div class="divvy">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui?
-                    Quam nemo umquam voluptatem appellavit, appellat; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
-                    Contineo me ab exemplis. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque
-                    opiniones assequi possit. Quasi ego id curem, quid ille aiat aut neget. Eaedem enim utilitates poterunt eas
-                    labefactare
-                    atque pervertere.
-                
-                    Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Idemne potest esse dies saepius, qui semel fuit? Venit
-                    ad
-                    extremum; Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem.
-                    Ita
-                    enim vivunt quidam, ut eorum vita refellatur oratio. Aliter enim nosmet ipsos nosse non possumus. Sit, inquam, tam
-                    facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Illum mallem levares, quo optimum atque
-                    humanissimum virum, Cn.
-                
-                    Duo Reges: constructio interrete. Quodsi ipsam honestatem undique pertectam atque absolutam. Quo igitur, inquit,
-                    modo?
-                    Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Fatebuntur
-                    Stoici
-                    haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Ille vero, si insipiens-quo certe,
-                    quoniam
-                    tyrannus -, numquam beatus; Sed quot homines, tot sententiae; Tubulo putas dicere? Videamus igitur sententias eorum,
-                    tum
-                    ad verba redeamus. Quo tandem modo?</p>
-            </div>
-                    
-        </section>
-
-        <!--Page 2-->
-        <input id="slide-2-trigger" type="radio" name="slides">
-        <section class="slide slide-two">
-            <h1>SYNAPSE CLOUD</h1>
-            <ul class="social-networks bounce">
-                <li><a href="https://twitter.com/synapsecloud" target="_blank" class="icon-twitter">Twitter</a></li>
-                <li><a href="https://github.com/synapsecloud" target="_blank" class="icon-github">GitHub</a></li>
-                <li><a href="https://instagram.com/synapsecloudhosting" target="_blank" class="icon-instagram">Instagram</a></li>
-                <li><a href="https://www.linkedin.com/synapsecloud" target="_blank" class="icon-linkedin">LinkedIn</a></li>
-            </ul>
-            <hr>
-            <div class="divvy">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui?
-                    Quam nemo umquam voluptatem appellavit, appellat; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
-                    Contineo me ab exemplis. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque
-                    opiniones assequi possit. Quasi ego id curem, quid ille aiat aut neget. Eaedem enim utilitates poterunt eas
-                    labefactare
-                    atque pervertere.
-                
-                    Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Idemne potest esse dies saepius, qui semel fuit? Venit
-                    ad
-                    extremum; Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem.
-                    Ita
-                    enim vivunt quidam, ut eorum vita refellatur oratio. Aliter enim nosmet ipsos nosse non possumus. Sit, inquam, tam
-                    facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Illum mallem levares, quo optimum atque
-                    humanissimum virum, Cn.
-                
-                    Duo Reges: constructio interrete. Quodsi ipsam honestatem undique pertectam atque absolutam. Quo igitur, inquit,
-                    modo?
-                    Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Fatebuntur
-                    Stoici
-                    haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Ille vero, si insipiens-quo certe,
-                    quoniam
-                    tyrannus -, numquam beatus; Sed quot homines, tot sententiae; Tubulo putas dicere? Videamus igitur sententias eorum,
-                    tum
-                    ad verba redeamus. Quo tandem modo?</p>
-            </div>
-            
-        </section>
-
-        <!--Page 3-->
-        <input id="slide-3-trigger" type="radio" name="slides">
-        <section class="slide slide-three">
-            <h1>SOLITARY</h1>
-            <ul class="social-networks bounce">
-                <li><a href="https://twitter.com/solitary" target="_blank" class="icon-twitter">Twitter</a></li>
-                <li><a href="https://instagram.com/traed_studios" target="_blank" class="icon-instagram">Instagram</a></li>
-            </ul>
-            <hr>
-            <div class="divvy">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cur igitur, cum de re conveniat, non malumus usitate loqui?
-                    Quam nemo umquam voluptatem appellavit, appellat; Heri, inquam, ludis commissis ex urbe profectus veni ad vesperum.
-                    Contineo me ab exemplis. Praeclare enim Plato: Beatum, cui etiam in senectute contigerit, ut sapientiam verasque
-                    opiniones assequi possit. Quasi ego id curem, quid ille aiat aut neget. Eaedem enim utilitates poterunt eas
-                    labefactare
-                    atque pervertere.
-                
-                    Ne amores quidem sanctos a sapiente alienos esse arbitrantur. Idemne potest esse dies saepius, qui semel fuit? Venit
-                    ad
-                    extremum; Itaque quantum adiit periculum! ad honestatem enim illum omnem conatum suum referebat, non ad voluptatem.
-                    Ita
-                    enim vivunt quidam, ut eorum vita refellatur oratio. Aliter enim nosmet ipsos nosse non possumus. Sit, inquam, tam
-                    facilis, quam vultis, comparatio voluptatis, quid de dolore dicemus? Illum mallem levares, quo optimum atque
-                    humanissimum virum, Cn.
-                
-                    Duo Reges: constructio interrete. Quodsi ipsam honestatem undique pertectam atque absolutam. Quo igitur, inquit,
-                    modo?
-                    Perturbationes autem nulla naturae vi commoventur, omniaque ea sunt opiniones ac iudicia levitatis. Fatebuntur
-                    Stoici
-                    haec omnia dicta esse praeclare, neque eam causam Zenoni desciscendi fuisse. Ille vero, si insipiens-quo certe,
-                    quoniam
-                    tyrannus -, numquam beatus; Sed quot homines, tot sententiae; Tubulo putas dicere? Videamus igitur sententias eorum,
-                    tum
-                    ad verba redeamus. Quo tandem modo?</p>
-            </div>            
-        </section>
-
-        <!--Page 4-->
-        <input id="slide-4-trigger" type="radio" name="slides">
-        <section class="slide slide-four">
-            <h1>COMRADE-IN-ARMS</h1>
-            <ul class="social-networks bounce">
-                <li><a href="https://www.facebook.com/ComradeInArmsGame" target="_blank" class="icon-facebook">Facebook</a></li>
-                <li><a href="https://instagram.com/comradeinarmsgame/" target="_blank" class="icon-instagram">Instagram</a></li>
-            </ul>
-            <hr>
-            <div class="divvy">
-                <iframe src="https://store.steampowered.com/widget/1245900/" frameborder="0" width="646" height="190" style="margin-top: 40px; margin-bottom: 40px; background-color: #1ad4a8; margin-left: 18%; margin-right: 18%; box-shadow: 0 0 20px 0px #1ad4a8; border-radius: 0px 0px 10px 10px;"></iframe>
-                <img src="https://steamcdn-a.akamaihd.net/steam/apps/1245900/extras/LOGO2.png?t=1583232303">
-                <h2>LORE</h2>
-                <p>High-intensity 2D Arcade-style shooter.
-        
-                    Survive waves with different kinds of high powered enemies.
-                    <br>
-                    "Comrade in Arms" is an addicting 2D Arcade-shooter, where you can improve your skills and reflexes.</p>
-                <h2>STORY</h2>
-                <p> You are playing as a strong lone soldier with a powerful gun.
-                    There are different enemies with different weapons and the target is for them to kill you.
-                    <br>
-                    The only way to upgrade your weapon is to reach level 5 and 10!
-                    Your special ability is to heal yourself.
-                    <br>
-                    The goal is to kill the King to save the planet! </p>
-                <h2>FEATURES:</h2>
-                <p>
-                    -modern 2D Arcade-shooter-difficulty increases with every wave
-                    <br>
-                    -electric soundtrack will help to shoot the enemies down
-                    <br>
-                    -13 diversified levels are existing
-                </p>
-        
-                <h3>Mature content description:</h3>
-                <p>This game contains cartoonish gore and fantasy violence not suitable for every viewer.</p>
-            </div>
-        
-        </section>
-    
     </div>
+
 </body>
+
 </html>
